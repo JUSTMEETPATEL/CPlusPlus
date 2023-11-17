@@ -13,6 +13,11 @@ public:
     {
         name = n;
     }
+
+    dataout()
+    {
+        cout<<"I am from "<< born<<endl;
+    }
 };
 
 class Gujrat : public Indian
@@ -22,10 +27,10 @@ public:
     {
         born = "Gujrat";
     }
-    dataout()
-    {
-        cout << "I am from " << born << " like --> Meet" << endl;
-    }
+    // dataout()
+    // {
+    //     cout << "I am from " << born << " like --> Meet" << endl;
+    // }
 
     void garba()
     {
@@ -46,10 +51,29 @@ public:
         cout<<"They are some special breed who can perform some ritual called KALA JAADU and those are bengalis"<<endl;
     }
     
-    dataout()
-    { 
-        cout << "I am from " << born << " like --> Rishit" << endl;
-    }
+    // dataout()
+    // { 
+    //     cout << "I am from " << born << " like --> Rishit" << endl;
+    // }
+};
+
+class Marthi: public Indian
+{
+    public:
+        Marthi()
+        {
+            born = "Maharashtra";
+        }
+
+        void rep_love()
+        {
+            cout<<"They are the reptile lovers, there is a streotype which says marathi people loves reptile"<<endl;
+        }
+
+        // dataout()
+        // {
+        //     cout<<"I am from "<< born << " like --> Soham"<<endl;
+        // }
 };
 
 class Pinaki : public Gujrat, public Bengal
@@ -70,6 +94,10 @@ int main()
     Bengal bengali;
     bengali.dataout();
     bengali.kala_jaadu();
+
+    Marthi mathu;
+    mathu.dataout();
+    mathu.rep_love();
 
     Pinaki pinaki;
 
