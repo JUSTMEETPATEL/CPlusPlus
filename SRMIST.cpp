@@ -30,25 +30,42 @@ Inheritance Tree
 //Base Class SRMIST 
 
 class SRMIST{
-    //body
+    public:
+        string Name,Designation,FatherName,MotherName;
+        int age;
+
+        void personal_details()
+        {
+            cout<<"Enter Your Name :"<<endl;
+            cin>>Name;
+            cout<<"Enter Your Age :"<<endl;
+            cin>>age;
+            cout<<"Enter Your Father's Name :"<<endl;
+            cin>>FatherName;
+            cout<<"Enter Your Mother's Name :"<<endl;
+            cin>>MotherName;
+        }
+
 };
 
 //Derived Class from Base Class SRMIST - 1: Students
 
 class Students : public SRMIST {
-    //body
+    public:
+        Designation = "Student";
 };
 
 //Derived Class from Base Class SRMIST - 2: Teachers
 
 class Teachers : public SRMIST{
-    //body
+    public:
+        Designation = "Teacher";
 };
 
 //Derived Class from Base Class SRMIST - 3: Admin
 
 class Admin : public SRMIST{
-    //body 
+    Designation = "Admin";
 };
 
 // Hybrid Class of Class Students and Teachers named BTECH
