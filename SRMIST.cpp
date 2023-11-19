@@ -71,13 +71,16 @@ class Admin : public SRMIST{
 // Hybrid Class of Class Students and Teachers named BTECH
 
 class BTECH : public Students, public Teachers{
-    //body
+    public:
+
 };
 
 // Deriving Class by taking hybrid class BTECH as Base Class named CSE
 
 class CSE : public BTECH{
-    //body
+    public:
+        int year;
+        string sub1,sub2,sub3,sub4,sub5,sub6;
 };
 
 // Deriving an another Class by taking hybrid class BTECH as Base Class named CSE_Spec
@@ -89,7 +92,8 @@ class CSE_Spec : public BTECH{
 // Derving Class CS by taking CSE_Spec as Base class
 
 class CS : public CSE_Spec{
-    //body
+    public:
+        
 };
 
 // Derving an antother Class BDA by taking CSE_Spec as Base class
