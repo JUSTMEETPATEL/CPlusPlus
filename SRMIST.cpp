@@ -72,52 +72,72 @@ class Admin : public SRMIST{
 
 class BTECH : public Students, public Teachers{
     public:
-
+        int year;
+        string sub1,sub2,sub3,sub4,sub5,sub6;
+        string branch;
+        void p_info()
+        {
+            cout<<"Enter the year you are currenty studying :"<<endl;
+            cin>>year;
+            cout<<"Enter Subject-1 :"<<endl;
+            cin>>sub1;
+            cout<<"Enter Subject-2 :"<<endl;
+            cin>>sub2;
+            cout<<"Enter Subject-3 :"<<endl;
+            cin>>sub3;
+            cout<<"Enter Subject-4 :"<<endl;
+            cin>>sub4;
+            cout<<"Enter Subject-5 :"<<endl;
+            cin>>sub5;
+            cout<<"Enter Subject-6 :"<<endl;
+            cin>>sub6;
+        }
 };
 
 // Deriving Class by taking hybrid class BTECH as Base Class named CSE
 
 class CSE : public BTECH{
     public:
-        int year;
-        string sub1,sub2,sub3,sub4,sub5,sub6;
+        branch = 'CSE CORE';
 };
 
 // Deriving an another Class by taking hybrid class BTECH as Base Class named CSE_Spec
 
 class CSE_Spec : public BTECH{
-    //body
+    public:
+        branch = ''
 };
 
 // Derving Class CS by taking CSE_Spec as Base class
 
 class CS : public CSE_Spec{
     public:
-        
+        branch = 'CSE Cyber Security';
 };
 
 // Derving an antother Class BDA by taking CSE_Spec as Base class
 
 class BDA : public CSE_Spec{
-    //body
+    public:
+        branch = 'CSE Big Data Analysis';
 }; 
 
 // Derving an antother Class GT by taking CSE_Spec as Base class
 
 class GT : public CSE_Spec{
-    //body
+    branch = 'CSE Gaming Technology';
 };
 
 // Derving an antother Class IT by taking CSE_Spec as Base class
 
 class IT : public CSE_Spec{
-    //body
+    branch = 'CSE Information Technology';
 };  
 
 // Derving an antother Class BIOTECH by taking CSE_Spec as Base class
 
 class BIOTECH : public CSE_Spec{
-    //body
+    branch = 'CSE BioTechnology';
 };
 
 
