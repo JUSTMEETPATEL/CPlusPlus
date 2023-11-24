@@ -52,20 +52,26 @@ class SRMIST{
 
 class Students : public SRMIST {
     public:
-        Designation = "Student";
+        Students(){
+            Designation = "Student";
+            }
 };
 
 //Derived Class from Base Class SRMIST - 2: Teachers
 
 class Teachers : public SRMIST{
     public:
-        Designation = "Teacher";
+        Teachers(){
+            Designation = "Teacher";
+        }
 };
 
 //Derived Class from Base Class SRMIST - 3: Admin
 
 class Admin : public SRMIST{
-    Designation = "Admin";
+    Admin(){
+        Designation = "Admin";
+        }
 };
 
 // Hybrid Class of Class Students and Teachers named BTECH
@@ -98,46 +104,63 @@ class BTECH : public Students, public Teachers{
 
 class CSE : public BTECH{
     public:
-        branch = 'CSE CORE';
+        CSE(){
+            branch = "CSE CORE";
+        }
 };
 
 // Deriving an another Class by taking hybrid class BTECH as Base Class named CSE_Spec
 
 class CSE_Spec : public BTECH{
     public:
-        branch = ''
+        CSE_Spec(){
+            branch = " ";
+        }
 };
 
 // Derving Class CS by taking CSE_Spec as Base class
 
 class CS : public CSE_Spec{
     public:
-        branch = 'CSE Cyber Security';
+        CS(){
+            branch = "CSE Cyber Security";
+        }
 };
 
 // Derving an antother Class BDA by taking CSE_Spec as Base class
 
 class BDA : public CSE_Spec{
-    public:
-        branch = 'CSE Big Data Analysis';
+public:
+    BDA() {
+        branch = "CSE Big Data Analysis";
+    }
 }; 
 
-// Derving an antother Class GT by taking CSE_Spec as Base class
+// Deriving another Class GT by taking CSE_Spec as Base class
 
 class GT : public CSE_Spec{
-    branch = 'CSE Gaming Technology';
+public:
+    GT() {
+        branch = "CSE Gaming Technology";
+    }
 };
 
-// Derving an antother Class IT by taking CSE_Spec as Base class
+// Deriving another Class IT by taking CSE_Spec as Base class
 
 class IT : public CSE_Spec{
-    branch = 'CSE Information Technology';
+public:
+    IT() {
+        branch = "CSE Information Technology";
+    }
 };  
 
-// Derving an antother Class BIOTECH by taking CSE_Spec as Base class
+// Deriving another Class BIOTECH by taking CSE_Spec as Base class
 
 class BIOTECH : public CSE_Spec{
-    branch = 'CSE BioTechnology';
+public:
+    BIOTECH() {
+        branch = "CSE BioTechnology";
+    }
 };
 
 
