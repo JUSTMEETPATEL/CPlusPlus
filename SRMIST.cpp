@@ -168,6 +168,5 @@ public:
 
 int main()
 {
-    CS meet;
-
+    CS meet2;
 }
