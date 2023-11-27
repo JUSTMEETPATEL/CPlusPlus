@@ -81,7 +81,7 @@ class BTECH : public Students, public Teachers{
         int year;
         string sub1,sub2,sub3,sub4,sub5,sub6;
         string branch;
-        void p_info()
+        BTECH()
         {
             cout<<"Enter the year you are currenty studying :"<<endl;
             cin>>year;
@@ -168,5 +168,6 @@ public:
 
 int main()
 {
-    
+    CS meet;
+
 }
