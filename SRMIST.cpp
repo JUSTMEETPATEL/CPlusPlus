@@ -191,13 +191,14 @@ public:
 int main()
 {
     string a;
-    cin >>a;
+    cin >> a;
     if (a == "Teacher")
     {
         CS meet;
         meet.personalT();
     }
-    else{
+    else
+    {
         CS meet;
         meet.personalS();
         meet.get_info();
