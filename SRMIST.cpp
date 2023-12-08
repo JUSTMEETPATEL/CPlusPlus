@@ -191,6 +191,7 @@ public:
 int main()
 {
     string a;
+    cout<<"Are you a Teacher/Student"<<endl;
     cin >> a;
     if (a == "Teacher")
     {
