@@ -108,6 +108,7 @@ public:
         cin >> sub5;
         cout << "Enter Subject-6 :" << endl;
         cin >> sub6;
+        
     }
 };
 
