@@ -26,6 +26,7 @@ int main()
         cout << "Entering the block" << endl;
         num b, c;
         cout << "Exiting the block" << endl;
+        
     }
     cout << "Exiting the main block" << endl;
 }
